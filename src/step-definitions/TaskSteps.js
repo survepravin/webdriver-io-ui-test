@@ -10,8 +10,8 @@ const actionHelper = require('../helpers/ActionHelper');
 const reportLog = require('../helpers/ReporterLog');
 
 When('User logins with username and password', () => {
-    let username  = process.env.USER_NAME; //"standard_user"
-    let password  = process.env.PASS_WORD; //"secret_sauce"
+    let username  = process.env.USER_NAME;
+    let password  = process.env.PASS_WORD;
 
     reportLog.addPlainText("User : " + username);
     loginPage.doLogin(username, password);
